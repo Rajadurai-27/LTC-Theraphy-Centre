@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        LIFECARE THERAPY CENTRE
+    </title>
+    <style>
+         body {
+            background-image: url('../../Images/bg-1.webp');
+        }
+        #bodycontent {
+            font-family: cursive;
+
+            font-size: 22px;
+            width: 100%;
+            height: 100%;
+            min-height: 350px;
+            overflow: hidden;
+
+            .column {
+                float: left;
+                width: 47%;
+                padding: 15px;
+            }
+
+            /* Clear floats after the columns */
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+
+        .flex-container,
+        .flex-container-nav {
+            display: flex;
+            padding: 1px;
+        }
+
+        .flex-container {
+
+            position: relative;
+
+            div {
+                margin: 10px;
+                padding: 20px;
+                font-size: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 5px;
+            }
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+
+        }
+
+        .flex-container-nav {
+            nav {
+                max-width: 100%;
+                width: 100%;
+
+                img {
+                    width: 257px;
+                    height: 102px;
+                    object-fit: cover;
+                    box-shadow: 0 0 0 #000;
+                }
+            }
+
+            
+            .nav-parent {
+                display: flex;
+
+                li.dropdown {
+                    padding-top: 30px;
+                    padding-left: 10px;
+                }
+            }
+
+            .nav-text {
+                font-family: cursive;
+                font-size: 15px;
+                text-wrap: nowrap;
+                font-weight: 600;
+                color: #b9312a;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-top: 1px solid rgb(197 39 32);
+
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                /* background-color: #38444d; */
+
+                li a,
+                .dropbtn {
+                    display: inline-block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+
+                li a:hover,
+                .dropdown:hover .dropbtn {
+                    border-top: 2px solid rgb(45, 7, 5);
+
+                }
+
+                li.dropdown {
+                    display: inline-block;
+                }
+
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+
+                .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+
+                .dropdown-content a:hover {
+                    background-color: #f1f1f1;
+                }
+
+                .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="flex-container">
+        <img src="../../Images/logo-new-2.png">
+    </div>
+    <div class="flex-container-nav">
+        <nav>
+            <ul class="nav-parent">
+
+                <li class="dropdown"><a class="nav-text" href="../Centre/home.html">Home</a></li>
+
+                <li class="dropdown"><a class="nav-text">About Us</a>
+                    <ul class="dropdown-content">
+                        <li><a class="nav-text" href="../About us/vision.html">Vision</a></li>
+                        <li><a class="nav-text" href="../About us/aim.html">Aim</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="nav-text">Therapy Services</a>
+                    <ul class="dropdown-content">
+                        <li><a id="content" class="nav-text" href="../Therapy Services/occupational-therapy.html"
+                                target="_self">Occupational Therapy</a></li>
+                        <li><a class="nav-text" href="../Therapy Services/speech-therapy.html">Speech Therapy</a></li>
+                        <li><a class="nav-text" href="../Therapy Services/physiotherapy.html">Physiotherapy</a></li>
+
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="nav-text">Educational Services</a>
+                    <ul class="dropdown-content">
+                        <li><a class="nav-text" href="../Educational Services/special-education.html">Special
+                                Education</a></li>
+                        <li><a class="nav-text" href="../Educational Services/vocational-education.html">Vocational
+                                Education</a></li>
+
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="nav-text">Conditions Treated</a>
+                    <ul class="dropdown-content">
+                        <li><a class="nav-text" href="../Conditions-treated/asd.html">Autism (ASD-Autistic Spectrum
+                                Disorder)</a></li>
+                        <li><a class="nav-text" href="../Conditions-treated/cp.html">Cerebral palsy (CP)</a></li>
+                        <li><a class="nav-text" href="../Conditions-treated/dd.html">Developmental Delay</a></li>
+                        <li><a class="nav-text" href="../Conditions-treated/adhd.html">ADHD (Attention Deficit
+                                Hyperactivity Disorder)</a></li>
+                        <li><a class="nav-text" href="../Conditions-treated/id.html">Intellectual Disability (ID) </a>
+                        </li>
+                    </ul>
+                </li>
+                </li>
+                <li class="dropdown"><a class="nav-text" href="daycare.html">Daycare Centre</a>
+                </li>
+                </li>
+                 <li class="dropdown"><a class="nav-text" href="blog.html">Events</a></li>
+                <li class="dropdown"><a class="nav-text" href="reviews.html">Reviews</a></li>
+                <li class="dropdown"><a class="nav-text" href="intouch.html">Get In Touch</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="bodycontent">
+        <div class="row">
+            <div class="column">
+                <h1>Daycare Centre</h1>
+                <p> Daycare centre provides supervision and care of children during daytime. Through daycare centre
+                    children are occupied throughout the day with basic concept based activities, training self-care and
+                    free play for the child. </p>
+            </div>
+            <div class="column">
+                <img src="../../Images/lifecare-2.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
