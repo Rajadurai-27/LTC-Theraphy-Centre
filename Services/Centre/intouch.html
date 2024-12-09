@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        LIFECARE THERAPY CENTRE
+    </title>
+    <style>
+         body {
+            background-image: url('../../Images/bg-1.webp');
+        }
+        #bodycontent {
+            font-family: cursive;
+
+            font-size: 22px;
+            width: 100%;
+            height: 100%;
+            min-height: 350px;
+            overflow: hidden;
+
+            .column {
+                float: left;
+                width: 47%;
+                padding: 15px;
+            }
+            .column-expert {
+                float: left;
+                width: 22%;
+                padding: 15px;
+                img{
+                    width: 100% !important;
+                }
+            }
+            /* Clear floats after the columns */
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .mySlides {
+                display: none
+            }
+
+            img {
+                vertical-align: middle;
+            }
+
+            /* Slideshow container */
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+
+            /* Next & previous buttons */
+            .prev,
+            .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            /* Caption text */
+            .text {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            /* The dots/bullets/indicators */
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+
+            .active,
+            .dot:hover {
+                background-color: #717171;
+            }
+
+            /* Fading animation */
+            .fade {
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+
+            @keyframes fade {
+                from {
+                    opacity: .4
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+
+                .prev,
+                .next,
+                .text {
+                    font-size: 11px
+                }
+            }
+        }
+
+        .flex-container,
+        .flex-container-nav {
+            display: flex;
+            padding: 1px;
+        }
+
+        .flex-container {
+
+            position: relative;
+
+            div {
+                margin: 10px;
+                padding: 20px;
+                font-size: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 5px;
+            }
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+
+        }
+
+        .flex-container-nav {
+            nav {
+                max-width: 100%;
+                width: 100%;
+
+                img {
+                    width: 257px;
+                    height: 102px;
+                    object-fit: cover;
+                    box-shadow: 0 0 0 #000;
+                }
+            }
+
+            .nav-parent {
+                display: flex;
+
+                li.dropdown {
+                    padding-top: 30px;
+                    padding-left: 10px;
+                }
+            }
+
+            .nav-text {
+                font-family: cursive;
+                font-size: 15px;
+                text-wrap: nowrap;
+                font-weight: 600;
+                color: #b9312a;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-top: 1px solid rgb(197 39 32);
+
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                /* background-color: #38444d; */
+
+                li a,
+                .dropbtn {
+                    display: inline-block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+
+                li a:hover,
+                .dropdown:hover .dropbtn {
+                    border-top: 2px solid rgb(45, 7, 5);
+
+                }
+
+                li.dropdown {
+                    display: inline-block;
+                }
+
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+
+                .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+
+                .dropdown-content a:hover {
+                    background-color: #f1f1f1;
+                }
+
+                .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="flex-container">
+        <img src="../../Images/logo-new-2.png">
+    </div>
+    <div class="flex-container-nav">
+        <nav>
+            <ul class="nav-parent">
+
+                <li class="dropdown"><a class="nav-text" href="../Centre/home.html">Home</a></li>
+
+                <li class="dropdown"><a class="nav-text">About Us</a>
+                    <ul class="dropdown-content">
+                        <li><a class="nav-text" href="../About us/vision.html">Vision</a></li>
+                        <li><a class="nav-text" href="../About us/aim.html">Aim</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="nav-text">Therapy Services</a>
+                    <ul class="dropdown-content">
+                        <li><a id="content" class="nav-text" href="../Therapy Services/occupational-therapy.html"
+                                target="_self">Occupational Therapy</a></li>
+                        <li><a class="nav-text" href="../Therapy Services/speech-therapy.html">Speech Therapy</a></li>
+                        <li><a class="nav-text" href="../Therapy Services/physiotherapy.html">Physiotherapy</a></li>
+
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="nav-text">Educational Services</a>
+                    <ul class="dropdown-content">
+                        <li><a class="nav-text" href="../Educational Services/special-education.html">Special
+                                Education</a></li>
+                        <li><a class="nav-text" href="../Educational Services/vocational-education.html">Vocational
+                                Education</a></li>
+
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="nav-text">Conditions Treated</a>
+                    <ul class="dropdown-content">
+                        <li><a class="nav-text" href="../Conditions-treated/asd.html">Autism (ASD-Autistic Spectrum
+                                Disorder)</a></li>
+                        <li><a class="nav-text" href="../Conditions-treated/cp.html">Cerebral palsy (CP)</a></li>
+                        <li><a class="nav-text" href="../Conditions-treated/dd.html">Developmental Delay</a></li>
+                        <li><a class="nav-text" href="../Conditions-treated/adhd.html">ADHD (Attention Deficit
+                                Hyperactivity Disorder)</a></li>
+                        <li><a class="nav-text" href="../Conditions-treated/id.html">Intellectual Disability (ID) </a>
+                        </li>
+                    </ul>
+                </li>
+                </li>
+                <li class="dropdown"><a class="nav-text" href="daycare.html">Daycare Centre</a>
+                </li>
+                </li>
+                 <li class="dropdown"><a class="nav-text" href="blog.html">Events</a></li>
+                <li class="dropdown"><a class="nav-text" href="reviews.html">Reviews</a></li>
+                <li class="dropdown"><a class="nav-text" href="intouch.html">Get In Touch</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <div id="bodycontent">
+        <div class="row">
+            <div class="column">
+                <h1>Get In Touch</h1>
+
+                <p>Call 893-993-3398, 781-105-0534</p>
+                <a href="https://wa.me/918939933398?text=Hi!%20I%20need%20Physiotherapy%20Service!" target="_blank">Click here to Whatsapp 893-993-3398</a>
+                <br>
+                <a href="https://www.google.com/maps/dir//Vijayapuram+3rd+St,+Chinnasalem,+Tamil+Nadu+606201/@11.634298,78.7904529,20603m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x3bab6f0c594c91b3:0x180df60e02cea58a!2m2!1d78.8728548!2d11.6343097?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D" 
+                target="_blank">Click here to google map</a>
+            </div>
+            
+        </div>
+        <h1>Our Experts</h1>
+        <div class="row">
+            <div class="column-expert">
+                <h2><strong>M.NISHANTHI</strong></h2>
+                <p>Occupational Therapist </p>
+                <p>Bachelor of Occupational Therapy </p>
+                <p>5 years of experience </p>
+                <br>
+                <img src="../../Images/expert2.jpg" style="width:100%">
+            </div>
+            <div class="column-expert">
+                <h2><strong>M.MONISHA</strong></h2>
+                <p>Speech Therapist </p>
+                <p>Bachelor of Audiology Speech and Language Pathologist </p>
+                <p>4 years of experience </p>
+                <img src="../../Images/expert3.jpg" style="width:100%">
+            </div>
+            <div class="column-expert">
+                <h2><strong>M.RAJAN</strong></h2>
+                <p>Occupational Therapist </p>
+                <p>Bachelor of Occupational Therapy </p>
+                <p>Visiting therapist </p>
+                <br>
+                <img src="../../Images/expert4.jpg" style="width:100%">
+            </div>
+            <div class="column-expert">
+                <h2><strong>T.CHITRA </strong></h2>
+                <p>Teacher </p>
+                <p>D.T.Ed </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <img src="../../Images/expert1.jpg" style="width:100%">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
